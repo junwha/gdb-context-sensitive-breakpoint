@@ -1,4 +1,4 @@
-# gdb-callstack-breakpoint
+# gdb-context-sensitve-breakpoint
 This is a gdb wrapper that supports callstack based breakpoint.
 
 # Usage
