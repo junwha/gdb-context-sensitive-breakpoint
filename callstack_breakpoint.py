@@ -3,8 +3,6 @@ it will insert a breakpoint with callstack
 Usage: gdb -x callstack_breakpoint.py 
 '''
 
-callstack = ["c", "b", "a"] # it means that we will break the callstack x -> b -> y -> a
-
 class CallstackBreakpoint (gdb.Breakpoint):
     def __init__(self, callstack, direct_callers=False):
       self.callstack = callstack[:-1]
@@ -23,5 +21,3 @@ class CallstackBreakpoint (gdb.Breakpoint):
             break
         
         return False if len(callstack) > 0 else True
-
-CallstackBreakpoint(callstack, True)
