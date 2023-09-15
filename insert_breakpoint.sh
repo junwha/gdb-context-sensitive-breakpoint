@@ -1,8 +1,8 @@
 #!/bin/bash
-HOME="${GDB_HOME:=`pwd`}"
+GDB_HOME="${GDB_HOME:=`pwd`}"
 
-if [ ! -f $HOME/.breakpoints.py ]; then
-    cat $HOME/callstack_breakpoint.py > $HOME/.breakpoints.py
+if [ ! -f $GDB_HOME/.breakpoints.py ]; then
+    cat $GDB_HOME/callstack_breakpoint.py > $GDB_HOME/.breakpoints.py
 fi
 
 # Check if at least one argument is provided
@@ -26,4 +26,4 @@ done
 # Close the callstack
 callstack+="]"
 
-echo "CallstackBreakpoint($callstack)" >> $HOME/.breakpoints.py
+echo "CallstackBreakpoint($callstack)" >> $GDB_HOME/.breakpoints.py
