@@ -1,2 +1,3 @@
 #!/bin/sh
-rm .breakpoints.py
+HOME="${GDB_HOME:=`pwd`}"
+rm $HOME/.breakpoints.py

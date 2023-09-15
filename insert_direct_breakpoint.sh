@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [ ! -f .breakpoints.py ]; then
-    cat callstack_breakpoint.py > .breakpoints.py
+if [ ! -f $HOME/.breakpoints.py ]; then
+    cat callstack_breakpoint.py > $HOME/.breakpoints.py
 fi
 
 # Check if at least one argument is provided
@@ -25,4 +25,4 @@ done
 # Close the callstack
 callstack+="]"
 
-echo "CallstackBreakpoint($callstack, True)" >> .breakpoints.py
+echo "CallstackBreakpoint($callstack, True)" >> $HOME/.breakpoints.py

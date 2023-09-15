@@ -10,3 +10,5 @@ This is a gdb wrapper that supports callstack based breakpoint.
 `./gdb` <args>: gdb wrapper with the breakpoints
 
 `./reset_breakpoint.sh`: flush all breakpoints
+
+`source env.sh`: if you execute this command inside this directory, you can use all of above scripts without "./" prefix
