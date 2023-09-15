@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ ! -f $HOME/.breakpoints.py ]; then
-    cat callstack_breakpoint.py > $HOME/.breakpoints.py
+    cat $HOME/callstack_breakpoint.py > $HOME/.breakpoints.py
 fi
 
 # Check if at least one argument is provided
